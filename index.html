@@ -18,7 +18,7 @@ layout: default
       </div>
       <div class="post-footer">
         <ul class="x-separated-list x-separated-list-meta x-separated-list-small">
-          {% assign author = site.authors[post.author] %}
+          <!-- {% assign author = site.authors[post.author] %}
           {% if author %}
             <li class="post-byline">
               {% if author.website %}
@@ -27,8 +27,8 @@ layout: default
                 {{ author.name }}
               {% endif %}
             </li>
-          {% endif %}
-          <li class="post-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %-d, %Y" }}</time></li>
+          {% endif %} -->
+          <li class="post-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date_to_string }}</time></li>
         </ul>
       </div>
     </article>
