@@ -12,9 +12,9 @@ layout: default
         <img src="{{ page.image }}" alt="" itemprop="image" />
       </div>
     {% endif %}
-    <h1 class="post-title" itemprop="headline">{{ page.title | xml_escape }}</h1>
+    <h2 class="post-title" itemprop="headline">{{ page.title | xml_escape }}</h2>
     <ul class="x-separated-list x-separated-list-meta">
-      {% if author %}
+      <!-- {% if author %}
         <li class="post-byline">
           {% if author.website %}
             <a href="{{ author.website }}">{{ author.name }}</a>
@@ -22,7 +22,7 @@ layout: default
             {{ author.name }}
           {% endif %}
         </li>
-      {% endif %}
+      {% endif %} -->
       <li class="post-date">
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
           {{ page.date | date_to_string }}
@@ -35,7 +35,7 @@ layout: default
     {{ content }}
   </div>
 
-  <div class="share">
+ <!--  <div class="share">
     <span class="share-title">Share this on:</span>
     {% assign url = page.url | prepend: site.baseurl | prepend: site.url %}
     <ul class="x-separated-list">
@@ -53,7 +53,7 @@ layout: default
       </li>
     </ul>
   </div>
-
+ -->
 </article>
 
 {% if author.bio %}
