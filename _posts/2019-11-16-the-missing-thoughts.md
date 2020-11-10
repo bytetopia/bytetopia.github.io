@@ -4,7 +4,7 @@ layout: post
 author: anthony
 ---
 
-君不知海浪。
+听歌
 
 <!--more-->
 
@@ -106,10 +106,4 @@ author: anthony
 
 盼我相思君不见能归
 
-
----
-
-update:
-
-这首歌后来被送人了，我的确不喜欢被改了之后的正式版。
 
