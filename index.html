@@ -1,61 +1,137 @@
----
-layout: default
----
 
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-{% if site.image and paginator.page == 1 %}
-  <div class="cover-image"><img src="{{ site.image }}" alt="" /></div>
-{% endif %}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-<div class="post-list">
-  {% for post in paginator.posts %}
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-      <header class="post-header">
-        <h2 class="post-title" itemprop="headline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | xml_escape }}</a></h2>
-      </header>
-      <div class="post-excerpt" itemprop="description">
-        {{ post.excerpt | strip_html }}<a class="read-more" href="{{url}}"></a>
-      </div>
-      <div class="post-footer">
-        <ul class="x-separated-list x-separated-list-meta x-separated-list-small">
-          <!-- {% assign author = site.authors[post.author] %}
-          {% if author %}
-            <li class="post-byline">
-              {% if author.website %}
-                <a href="{{ author.website }}">{{ author.name }}</a>
-              {% else %}
-                {{ author.name }}
-              {% endif %}
-            </li>
-          {% endif %} -->
-          <li class="post-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date_to_string }}</time></li>
-        </ul>
-      </div>
-    </article>
-  {% endfor %}
-</div>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <style type="text/css">
+      body {font-family: 'Roboto Slab', serif;}
+    </style>
 
-{% if paginator.previous_page or paginator.next_page %}
-  <nav class="pagination clearfix">
-    {% if paginator.previous_page %}
-      <a class="pagination-newer" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: 'index.html', '' }}">
-        <div>
-          <svg viewBox="0 0 9 14">
-            <path d="M7.293 14l1.414-1.414L3.12 7l5.587-5.586L7.293 0l-7 7 7 7z"/>
-          </svg>
+    <title>Dongxing Xin</title>
+
+  </head>
+  <body>
+    <div class="container-fluid d-none d-lg-block d-xl-block">
+      <div class="d-flex row flex-row vh-100">
+        <div class="d-flex flex-column col-5 align-items-center text-center align-self-center">
+          <div class="mx-auto text-center">
+            <!-- <div class="p-3"> -->
+              <!-- <img src="frank.jpg" style="height:15rem" class="rounded"> -->
+            <!-- </div> -->
+            <div class="p-2">
+              <h1>Dongxing Xin</h1>
+            </div>
+            <hr style="width:60%;"/>
+            <div class="p-2">
+              <div id="icon-list">
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a href="https://codingcat.cn" target="_blank">
+                      <button type="button" class="btn btn-outline-dark">
+                        Blog
+                      </button>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://github.com/bytetopia" target="_blank">
+                      <button type="button" class="btn btn-outline-dark">
+                        GitHub
+                      </button>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="mailto:hello@codingcat.cn">
+                      <button type="button" class="btn btn-outline-dark">
+                        Email
+                      </button>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div> 
         </div>
-        Newer Posts
-      </a>
-    {% endif %}
-    {% if paginator.next_page %}
-      <a class="pagination-older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">
-        <div>
-          <svg viewBox="0 0 9 14">
-            <path d="M1.707 14L.293 12.586 5.88 7 .292 1.414 1.707 0l7 7-7 7z"/>
-          </svg>
+        <div class="d-flex flex-column vh-100 border-left"></div>
+        <div class="d-flex flex-column col px-5 align-items-center align-self-center mh-100" style="overflow-y: scroll;">
+          <div class="my-5" id="content">
+            <h3>Bio</h3>
+            <p>Welcome to the homepage of Dongxing Xin. </p>
+            <p>Currently I work at ByteDance Beijing and focus on anti-spam data mining.</p>
+            <h3>Experience</h3>
+            <p><b>ByteDance</b> | Data Mining SDE | 2020 - Present</p>
+            <p><b>Renmin University of China</b> | M.S. Student | 2017 - 2020</p>
+            <p><b>Central University of Finance and Economics</b> | B.S. Student | 2013 - 2017</p>
+            <h3>Projects</h3>
+            <p><b><a href="https://chrome.google.com/webstore/detail/clpkmadppffkkcmgmebemkdjdgngjdop" target="_blank">Ataraxia</a></b> Chrome extension</p>
+            <p>A Google Chrome new tab extension with daily wallpapers. </p>
+            <p><b><a href="https://aka.ci" target="_blank">aka.ci</a></b> Tools for programmers</p>
+            <p>Collecting frequently used tools for programmers in one page.</p>
+          </div>
         </div>
-        Older Posts
-      </a>
-    {% endif %}
-  </nav>
-{% endif %}
+      </div>
+    </div>
+
+    <div class="container-flex min-vh-100 d-block d-lg-none d-xl-none">
+      <div class="d-flex flex-row justify-content-center">
+        <div class="d-flex flex-col">
+          <div class="mx-auto">
+           <!--  <div class="p-3 mt-3 text-center">
+              <img src="frank.jpg" style="height:15rem" class="rounded">
+            </div> -->
+            <div class="p-2 text-center">
+              <h1>Dongxing Xin</h1>
+            </div>
+            <hr style="width:60%;"/>
+
+            <div class="row justify-content-center align-items-center">
+              <div class="col-8 p-1 text-center">
+                <div class="list-group">
+                  <a href="https://codingcat.cn" target="_blank">
+                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                      Blog
+                    </button>
+                  </a>
+                  <a href="https://github.com/bytetopia" target="_blank">
+                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                      GitHub
+                    </button>
+                  </a>
+                  <a href="mailto:hello@codingcat.cn">
+                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                      Email
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="p pt-4 px-5">
+              <h3>Bio</h3>
+              <p>Welcome to the homepage of Dongxing Xin. Currently he works at ByteDance Beijing and focuses on anti-spam data mining.</p>
+              <h3>Experience</h3>
+              <p><b>ByteDance</b> | Data Mining SDE | 2020 - Present</p>
+              <p><b>Renmin University of China</b> | M.S. Student | 2017 - 2020</p>
+              <p><b>Central University of Finance and Economics</b> | B.S. Student | 2013 - 2017</p>
+              <h3>Projects</h3>
+              <p><b><a href="https://chrome.google.com/webstore/detail/clpkmadppffkkcmgmebemkdjdgngjdop" target="_blank">Ataraxia</a></b> Chrome extension</p>
+              <p>A Google Chrome new tab extension with daily wallpapers. </p>
+              <p><b><a href="https://aka.ci" target="_blank">aka.ci</a></b> Tools for programmers</p>
+              <p>Collecting frequently used tools for programmers in one page.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
