@@ -1,142 +1,78 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <style type="text/css">
-      body {font-family: 'Roboto Slab', serif;}
-    </style>
-
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Dongxing Xin</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:300,500,700"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+          sans-serif;
+        font-size: calc(10px + 0.33vw);
+        -webkit-font-smoothing: antialiased;
+        padding: 5vh 10vw;
+        color: #121314;
+      }
+      h1 {
+        font-size: 4.5em;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+      p {
+        font-size: 1.6em;
+        font-weight: 300;
+        line-height: 1.4;
+        max-width: 28em;
+      }
+      a {
+        text-decoration: none;
+        color: #121314;
+        position: relative;
+      }
+      a:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 60%;
+        left: -0.1em;
+        right: -0.1em;
+        bottom: 0;
+        transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+        background-color: rgba(79, 192, 141, 0.5);
+      }
+      a:hover:after {
+        top: 0%;
+      }
+    </style>
   </head>
   <body>
-    <div class="container-fluid d-none d-lg-block d-xl-block">
-      <div class="d-flex row flex-row vh-100">
-        <div class="d-flex flex-column col-5 align-items-center text-center align-self-center">
-          <div class="mx-auto text-center">
-            <!-- <div class="p-3">
-              <img src="avatar.png" style="height:15rem" class="rounded">
-            </div> -->
-            <div class="p-2">
-              <h1>Dongxing Xin</h1>
-            </div>
-            <hr style="width:60%;"/>
-            <div class="p-2">
-              <div id="icon-list">
-                <ul class="list-inline">
-                  <li class="list-inline-item">
-                    <a href="https://wiki.dongxing.xin" target="_blank">
-                      <button type="button" class="btn btn-outline-dark">
-                        Wiki
-                      </button>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="https://moments.dongxing.xin" target="_blank">
-                      <button type="button" class="btn btn-outline-dark">
-                        Moments
-                      </button>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="https://lab.dongxing.xin" target="_blank">
-                      <button type="button" class="btn btn-outline-dark">
-                        Lab
-                      </button>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="https://github.com/bytetopia" target="_blank">
-                      <button type="button" class="btn btn-outline-dark">
-                        GitHub
-                      </button>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="mailto:hello@dongxing.xin">
-                      <button type="button" class="btn btn-outline-dark">
-                        Email
-                      </button>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div> 
-        </div>
-        <div class="d-flex flex-column vh-100 border-left"></div>
-        <div class="d-flex flex-column col px-5 align-items-center align-self-center mh-100" style="overflow-y: scroll;">
-          <div class="my-5" id="content">
-            <p>&nbsp;&nbsp;&nbsp; Welcome to my homepage. Enjoy some 🎵🎶 <br/></p>
-            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=400 height=450 src="https://music.163.com/outchain/player?type=0&id=3081496151&auto=1&height=430"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-flex min-vh-100 d-block d-lg-none d-xl-none">
-      <div class="d-flex flex-row justify-content-center">
-        <div class="d-flex flex-col">
-          <div class="mx-auto">
-            <!-- <div class="p-3 mt-3 text-center">
-              <img src="avatar.png" style="height:15rem" class="rounded">
-            </div> -->
-            <div class="p-2 text-center">
-              <h1>Dongxing Xin</h1>
-            </div>
-            <hr style="width:60%;"/>
-
-            <div class="row justify-content-center align-items-center">
-              <div class="col-8 p-1 text-center">
-                <div class="list-group">
-                  <a href="https://wiki.dongxing.xin" target="_blank">
-                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
-                      Wiki
-                    </button>
-                  </a>
-                  <a href="https://moments.dongxing.xin" target="_blank">
-                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
-                      Moments
-                    </button>
-                  </a>
-                  <a href="https://lab.dongxing.xin" target="_blank">
-                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
-                      Lab
-                    </button>
-                  </a>
-                  <a href="https://github.com/bytetopia" target="_blank">
-                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
-                      GitHub
-                    </button>
-                  </a>
-                  <a href="mailto:hello@codingcat.cn">
-                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
-                      Email
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="p pt-4 px-5">
-              <p>&nbsp;&nbsp;&nbsp; Welcome to my homepage. Enjoy some 🎵🎶 <br/></p>
-             <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=400 height=450 src="https://music.163.com/outchain/player?type=0&id=3081496151&auto=1&height=430"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <h1>Hello.</h1>
+    <p style="font-weight: 500; font-size: 2.2em">Welcome to my homepage.</p>
+    <p>
+      <a href="https://wiki.dongxing.xin" target="_blank">Wiki</a>&nbsp;&nbsp; Tech articles.
+    </p>
+    <p>
+      <a href="https://lab.dongxing.xin" target="_blank">Lab</a>&nbsp;&nbsp; Products, API or experimental projects.
+    </p>
+    <p>
+      <a href="https://moments.dongxing.xin" target="_blank">Moments</a>&nbsp;&nbsp; Thoughts and photos, micro-blog.
+    </p>
+    <p>
+      <a href="https://github.com/bytetopia" target="_blank">Github</a>&nbsp;&nbsp; My Github page.
+    </p>
+    <p>
+      <a href="mailto:hello@dongxing.xin">Email</a>&nbsp;&nbsp; If you got any questions.
+    </p>
+    <p style="font-size:8px;position:fixed;bottom:5px;right:10px;">
+      &copy; Dongxing Xin 2021.
+      <a href="http://beian.miit.gov.cn/" target="_blank">京ICP备17072417-3</a>
+    </p>
   </body>
 </html>
