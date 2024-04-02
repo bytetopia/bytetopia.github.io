@@ -22,7 +22,7 @@
 
 <div class="container my-5">
   <div class="p-5 text-center bg-body-tertiary rounded-3">
-    <img class="bi mt-4 mb-3" style="color: var(--bs-indigo); border-radius: 50%;" width="200" height="200" src="./avatar.jpg"/>
+    <img class="bi mt-4 mb-3" id="noritake-avatar" style="object-fit: cover; border-radius: 50%;" width="200" height="200" src="./placeholder.png"/>
     <h1 class="text-body-emphasis">Dongxing Xin</h1>
     <p class="col-lg-8 mx-auto fs-5">
       👨🏻‍💻 + 🥷🏻 + 🐈 + 🍺 + 📷
@@ -43,6 +43,38 @@
     </div>
   </div>
 </div>
+
+<script>
+
+let avatars = [
+  "./noritakes/1.png",
+  "./noritakes/2.png",
+  "./noritakes/3.png",
+  "./noritakes/4.png",
+  "./noritakes/5.png",
+  "./noritakes/6.jpg",
+  "./noritakes/7.jpg",
+  "./noritakes/8.jpg",
+  "./noritakes/9.jpg",
+  "./noritakes/10.jpg",
+  "./noritakes/11.jpg",
+  "./noritakes/12.jpg",
+  "./noritakes/13.jpg",
+  "./noritakes/14.png",
+  "./noritakes/15.png",
+  "./noritakes/16.png",
+  "./noritakes/17.jpg",
+  "./noritakes/18.jpg",
+];
+
+function setRandomImage() {
+  let imgElement = document.getElementById("noritake-avatar");
+  let randomIndex = Math.floor(Math.random() * avatars.length);
+  imgElement.src = avatars[randomIndex];
+}
+
+window.addEventListener("load", setRandomImage);
+</script>
 
     </body>
 </html>
